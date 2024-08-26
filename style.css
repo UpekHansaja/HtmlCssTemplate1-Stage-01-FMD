@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* header-outer */
+.header-wrapper {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px dashed #3b1e02;
+}
+
+.header-inner {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+
+.logo-wrapper {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-wrapper > ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-wrapper > ul > li {
+  margin-right: 30px;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.nav-wrapper > ul > li:last-child {
+  margin-right: 0;
+}
+
+.nav-wrapper > ul > li > a {
+  text-decoration: none;
+  color: #3b1e02;
+  transition: 0.3s;
+}
+
+.nav-wrapper > ul > li > a:hover {
+  color: coral;
+  transition: 0.3s;
+}
+/* header-outer */
+
+/* Slider Outer */
+.slider-container {
+  height: 80vh;
+  display: flex;
+  padding: 20px;
+}
+
+.slider-inner {
+  flex: 1;
+}
+
+.left-slider {
+  display: flex;
+  align-items: center;
+  background-image: url("img/left-slider-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 20px;
+}
+
+.left-side-content-wrapper {
+  padding: 20px;
+  margin-left: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 62, 80, 0.6);
+  position: absolute;
+  /* opacity: 0.2; */
+}
+
+.left-side-content-wrapper > h1 {
+  font-size: 4rem;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f8ede6;
+}
+
+.left-side-content-wrapper > h4 {
+  color: #f8ede6;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: lighter;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-side-content-wrapper > button {
+  padding: 10px 30px;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 1px solid #f8ede6;
+  color: #f8ede6;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.left-side-content-wrapper > button:hover {
+  background-color: #f8ede6;
+  color: #3b1e02;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.right-slider {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.slider-right-wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.sldier-right-slot {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sldier-right-slot:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.slider-right-wrapper:nth-child(1) .sldier-right-slot:nth-child(1) {
+  background-image: url("img/right-slot2.jpg");
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.slider-right-wrapper:nth-child(1) .sldier-right-slot:nth-child(2) {
+  background-image: url("img/right-slot1.jpg");
+  margin-bottom: 10px;
+}
+
+.slider-right-wrapper:nth-child(2) .sldier-right-slot:nth-child(1) {
+  background-image: url("img/right-slot1.jpg");
+  background-position: center;
+  margin-top: 10px;
+}
+
+.slider-right-wrapper:nth-child(2) .sldier-right-slot:nth-child(2) {
+  background-image: url("img/right-slot2.jpg");
+  margin-top: 10px;
+}
+
+.data-heading {
+  font-size: 2.5rem;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f8ede6;
+  position: absolute;
+  z-index: 1;
+}
+
+.data-wrapper {
+  width: 90%;
+  height: 90%;
+  background-color: #2b1d19e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #f8ede6;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.sldier-right-slot:hover .data-wrapper {
+  opacity: 1;
+  transition: 0.3s;
+}
+.sldier-right-slot:hover .data-heading {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.data-wrapper > h2 {
+  font-size: 2rem;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f8ede6;
+}
+
+.data-wrapper h5 {
+  margin: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.data-wrapper > button {
+  padding: 10px 30px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid #f8ede6;
+  color: #f8ede6;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.data-wrapper > button:hover {
+  background-color: #f8ede6;
+  color: #3b1e02;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Slider Outer */
